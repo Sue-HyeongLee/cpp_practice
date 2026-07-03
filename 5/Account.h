@@ -1,0 +1,27 @@
+#ifndef __BANK_H__ 
+#define __BANK_H__
+
+class Account {
+	int id;
+	char* name;
+	int money;
+
+public:
+	Account(int id, char* name, int money);
+
+	void DepositMoney(int money);
+
+	void WithDrawMoney(int money);
+
+	void ShowAllInfo(void) const;
+
+	int GetID(void) const;
+
+	char* GetName(void) const;
+
+	int GetMoney(void) const;
+
+	~Account();
+
+};
+#endif

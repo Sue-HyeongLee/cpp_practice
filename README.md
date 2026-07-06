@@ -28,3 +28,6 @@ Bank와 Account에서 const 붙일 수 있는 멤버 함수들은 다 const 붙�
 
 * 5단계 
 controller class 만들기 사실 이미 Bank가 controller라 만들 필요는 없으나 Showmenu 관련된거만 추가.
+
+* 6단계 상속을 이용해보자. NormalAccount class와 HighCreditClass를 만들자.
+Bank에서 필요 이상의 수정은 하지말자. (MakeAccount는 Bank와 controller를 더 분화 안시켰기 때문에 수정할 수 밖에 없다.) NormalAccount에서는 이자율을, HighCredit은 고객의 신용등급에 따라 추가 이자를 주는 식으로 해보자.

@@ -31,3 +31,7 @@ controller class 만들기 사실 이미 Bank가 controller라 만들 필요는 
 
 * 6단계 상속을 이용해보자. NormalAccount class와 HighCreditClass를 만들자.
 Bank에서 필요 이상의 수정은 하지말자. (MakeAccount는 Bank와 controller를 더 분화 안시켰기 때문에 수정할 수 밖에 없다.) NormalAccount에서는 이자율을, HighCredit은 고객의 신용등급에 따라 추가 이자를 주는 식으로 해보자.
+
+* 7단계 프로그램을 여러개로 나눠서 관리하자.
+이미 나는 했었기에 NormalAccount, HighCreditAccount, BankingCommonDecl만 추가해주었다.
+심지어 getCredit이 double을 반환하지 않고, int를 반환해 문제가 생긴 거 수정했다.

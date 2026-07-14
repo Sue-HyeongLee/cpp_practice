@@ -38,7 +38,7 @@ Bank에서 필요 이상의 수정은 하지말자. (MakeAccount는 Bank와 cont
 
 * 8단계 좀 많이 애먹었는데, Account 대입 연산자 오버라이딩과 객체 배열 class를 만드는 건데 이거 자체로 만드는덴 얼마 안들엇다.
 다만 처음에는 Bank.h에서 AccountArray * customers;로 선언해 customers[i] = new Account(*(bank.customers[i]));
-와 같은 모든 것들을 싹 다 (*customers)[i] = new Account(*(bank.(*customers)[i]));로 만들어줘야해서 고생했다.
+와 같은 모든 것들을 싹 다 (\*customers)[i] = new Account(*(bank.(*customers)[i]));로 만들어줘야해서 고생했다.
 하지만 생각해보니, 굳이 AccountArray * customers;로 선언할 필요 없이 AccountArray customers;로 선언해도 
 stack 영역관점에서 12바이트밖에 차지 않고, 나머지 부분은 어차피 안에서 알아서 new로 할당해주므로 상관 없다.
 굳이 포인터를 쓰지 않았으면 훨씬 더 빨리 풀었을 문제.

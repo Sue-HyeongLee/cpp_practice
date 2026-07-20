@@ -53,3 +53,8 @@ AccountArray(int len=100); 이거 때문에 AccountArray 관련해서 정의를 
 따라서 이러한게 사라짐을 볼 수 있다. account.h와 account.cpp이 많이 바뀌었다.
 String을 우리 프로젝트에서 사용하면서 굉장히 편해졌다.
 적절한 class의 정의는 우리를 매우 편하게 한다.
+
+* 10단계 AccountArray를 BoundCheckArray로 우리가 배운 클래스 테플릿을 활용한다.
+다양한 데이터에 적요할 수 있는 클래스 템플릿으로 Account *를 데이터 타입을 갖게해서 적용해본다.
+마지막에 BoundCheckArray<Account *> customers;가 생각이 안 난 것이 크다. 그냥 정의하면 됐는데.
+
